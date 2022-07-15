@@ -1,0 +1,28 @@
+{
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnType": true,
+    "editor.insertSpaces": true,
+    "editor.gotoLocation.multipleDefinitions": "goto",
+    "[html]": {
+       "editor.formatOnSave": false,
+       "editor.formatOnType": false
+    },
+    "editor.tabSize": 2,
+    "files.eol": "\n",
+    "files.exclude": {
+       "**/.git": true, // git files
+       "**/.DS_Store": true,
+       "**/__snapshots__": true,
+       "**/node_modules": true, // stored libraries
+       "**/dist": true, // compiled code
+       "**/.yarn": true
+    },
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "editor.codeActionsOnSave": {
+       "source.fixAll.eslint": true
+    },
+    "typescript.tsdk": "**/node_modules/typescript/lib",
+    "eslint.nodePath": "C:\\Program Files\nodejs",
+    "eslint.workingDirectories": ["./src"]
+ }
