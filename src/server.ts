@@ -90,14 +90,14 @@ let cacheResponse: string = '';
     )}`;
 
     console.log(
-      `Data for ${currJob?.identifier?.long_name} completed, queuing next.`,
+      `Data for ${currJob?.identifier?.long_name} complete, queuing next.`,
     );
 
     const used = process.memoryUsage().heapUsed / 1024 / 1024;
     console.log(
-      `The script uses approximately ${Math.round(used * 100) / 100} MB`,
+      `Memory Usage: ${Math.round(used * 100) / 100}MB`,
     );
-  }, 5000);
+  }, 1000);
 })();
 
 const server = http.createServer((_, res) => {
