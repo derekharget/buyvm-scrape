@@ -1,7 +1,7 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true,
+    es2022: true,
   },
   globals: {
     window: true,
@@ -28,7 +28,6 @@ module.exports = {
     '@typescript-eslint/ban-ts-comment': [
       'error',
       {
-        // Future defaults
         minimumDescriptionLength: 10,
         'ts-expect-error': 'allow-with-description',
       },
@@ -37,7 +36,7 @@ module.exports = {
       'error',
       {
         types: {
-          '{}': false, // Team preference
+          '{}': false,
         },
       },
     ],
@@ -82,13 +81,13 @@ module.exports = {
     'no-trailing-spaces': 'error',
     'no-undef': 'off',
     'no-unused-expressions': 'error',
-    'no-useless-computed-key': 'off', // To be enabled
+    'no-useless-computed-key': 'off',
     'no-whitespace-before-property': 'error',
     'object-curly-spacing': ['error', 'always'],
     'object-shorthand': ['error', 'always'],
     'prefer-const': 'error',
     'prefer-object-spread': 'error',
-    'prefer-template': 'off', // To be enabled
+    'prefer-template': 'off',
     'quote-props': ['error', 'as-needed'],
     semi: ['error', 'always'],
     'sort-imports': [
@@ -106,7 +105,6 @@ module.exports = {
     'template-curly-spacing': ['error', 'never'],
     'valid-typeof': ['error', { requireStringLiterals: true }],
 
-    // no shadow needs to be handled by typescript-eslint
     'no-shadow': 'off',
     '@typescript-eslint/no-shadow': ['error'],
 
@@ -117,8 +115,8 @@ module.exports = {
     // import
     'import/first': 'error',
     'import/newline-after-import': 'error',
-    'import/no-cycle': 'off', // To be enabled
+    'import/no-cycle': 'off',
     'import/no-useless-path-segments': 'off',
-    'import/order': 'off', // To be enabled
+    'import/order': 'off',
   },
 };
